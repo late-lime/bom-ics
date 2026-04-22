@@ -1,0 +1,108 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//BOM IDW12300//Perth Forecast//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Perth Weather Forecast
+X-WR-TIMEZONE:Australia/Perth
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260422
+DTEND;VALUE=DATE:20260423
+SUMMARY:☀️ Mostly sunny
+DESCRIPTION:Mostly sunny. Winds west to northwesterly 15 to 20 km/h becomin
+ g light in the evening then becoming northwesterly 15 to 20 km/h in the la
+ te evening.\nChance of rain: 5%
+LOCATION:Perth\, WA
+URL:https://www.bom.gov.au
+UID:IDW12300-20260422@bom.gov.au
+DTSTAMP:20260422T064523Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260423
+DTEND;VALUE=DATE:20260424
+SUMMARY:🌧️ 21°C — Showers (1 to 4 mm)
+DESCRIPTION:Cloudy. The chance of smoke haze in the morning. Very high chan
+ ce of showers\, most likely in the morning. Winds northwesterly 20 to 30 k
+ m/h tending westerly in the morning then becoming light in the evening.\nM
+ in: 14°C  Max: 21°C\nChance of rain: 90%\nRainfall: 1 to 4 mm
+LOCATION:Perth\, WA
+URL:https://www.bom.gov.au
+UID:IDW12300-20260423@bom.gov.au
+DTSTAMP:20260422T064523Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260424
+DTEND;VALUE=DATE:20260425
+SUMMARY:🌦️ 21°C — Partly cloudy (0 to 1 mm)
+DESCRIPTION:Partly cloudy. Slight chance of a shower\, most likely in the m
+ orning and early afternoon. Light winds becoming southwesterly 15 to 20 km
+ /h in the early afternoon then becoming light in the late afternoon.\nMin:
+  13°C  Max: 21°C\nChance of rain: 30%\nRainfall: 0 to 1 mm
+LOCATION:Perth\, WA
+URL:https://www.bom.gov.au
+UID:IDW12300-20260424@bom.gov.au
+DTSTAMP:20260422T064523Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260425
+DTEND;VALUE=DATE:20260426
+SUMMARY:☀️ 25°C — Sunny
+DESCRIPTION:Sunny. Winds east to southeasterly 15 to 20 km/h becoming light
+  during the day then becoming southeasterly 15 to 20 km/h during the after
+ noon.\nMin: 10°C  Max: 25°C\nChance of rain: 5%
+LOCATION:Perth\, WA
+URL:https://www.bom.gov.au
+UID:IDW12300-20260425@bom.gov.au
+DTSTAMP:20260422T064523Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260426
+DTEND;VALUE=DATE:20260427
+SUMMARY:⛈️ 27°C — Possible shower (0 to 2 mm)
+DESCRIPTION:Partly cloudy. Medium chance of showers\, most likely in the af
+ ternoon and evening. The chance of a thunderstorm in the morning. Winds so
+ utheasterly 15 to 20 km/h tending easterly during the morning then becomin
+ g light during the day.\nMin: 13°C  Max: 27°C\nChance of rain: 40%\nRain
+ fall: 0 to 2 mm
+LOCATION:Perth\, WA
+URL:https://www.bom.gov.au
+UID:IDW12300-20260426@bom.gov.au
+DTSTAMP:20260422T064523Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260427
+DTEND;VALUE=DATE:20260428
+SUMMARY:⛈️ 22°C — Showers (1 to 10 mm)
+DESCRIPTION:Partly cloudy. Very high chance of showers. The chance of a thu
+ nderstorm. Light winds becoming northeasterly 15 to 20 km/h during the mor
+ ning.\nMin: 17°C  Max: 22°C\nChance of rain: 90%\nRainfall: 1 to 10 mm
+LOCATION:Perth\, WA
+URL:https://www.bom.gov.au
+UID:IDW12300-20260427@bom.gov.au
+DTSTAMP:20260422T064523Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260428
+DTEND;VALUE=DATE:20260429
+SUMMARY:⛈️ 23°C — Possible shower (0 to 1 mm)
+DESCRIPTION:Partly cloudy. Medium chance of showers. The chance of a thunde
+ rstorm. Light winds becoming southeasterly 15 to 20 km/h during the mornin
+ g.\nMin: 13°C  Max: 23°C\nChance of rain: 40%\nRainfall: 0 to 1 mm
+LOCATION:Perth\, WA
+URL:https://www.bom.gov.au
+UID:IDW12300-20260428@bom.gov.au
+DTSTAMP:20260422T064523Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260429
+DTEND;VALUE=DATE:20260430
+SUMMARY:🌦️ 23°C — Mostly sunny
+DESCRIPTION:Mostly sunny. Slight chance of a shower. Winds easterly 15 to 2
+ 0 km/h shifting south to southwesterly during the day.\nMin: 12°C  Max: 2
+ 3°C\nChance of rain: 20%
+LOCATION:Perth\, WA
+URL:https://www.bom.gov.au
+UID:IDW12300-20260429@bom.gov.au
+DTSTAMP:20260422T064523Z
+END:VEVENT
+END:VCALENDAR
