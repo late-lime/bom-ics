@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   update-bom:
@@ -22,21 +22,10 @@ jobs:
       - name: Run update script
         run: python bom-ics/update.py
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'bom-ics/docs'
-
-  deploy:
-    needs: update-bom
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit and push updated ICS
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add bom-ics/docs/IDW12300.ics bom-ics/docs/IDW12300.xml
+          git diff --staged --quiet || git commit -m "Update forecast $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
