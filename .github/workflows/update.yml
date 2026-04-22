@@ -1,0 +1,31 @@
+name: Update BOM ICS
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-bom:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Run update script
+        run: python bom-ics/update.py
+      
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add bom-ics/docs/IDW12300.ics bom-ics/docs/IDW12300.xml
+          git commit -m "Update BOM forecast ICS" || true
+          git push
